@@ -11,20 +11,132 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_install/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  //tipe data dan variable 
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+  var mahasiswa = "natasukma";
+  var umur = "20";
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+  print(mahasiswa + "umur = " + umur.toString());
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
-  });
+  //string
+  String mahasiswastring = "nur safari";
+
+print(mahasiswastring);
+
+//int
+
+int semester;
+semester = 4;
+
+print(semester);
+
+//double
+
+double ipk;
+ipk = 3.4;
+
+print(ipk);
+
+//boolean
+
+bool benar = true;
+bool salah = false;
+bool tidakbenar = !true;
+bool tidaksalah = !false;
+
+//List
+
+List jurusan = [
+  "Teknik Informatika",
+  "Sistem Informasi",
+  semester.toString(),
+  ipk.toString()
+];
+
+print(jurusan);
+
+//map
+Map kelas = {"nama": "Nata Sukma", "kelas": "TI"};
+
+print(kelas);
+print(kelas['nama']);
+print(kelas['kelas']);
+
+//operator
+
+int a, b;
+a = 9;
+b = 7;
+print("a = " + a.toString());
+print("b = " + b.toString());
+
+print(a + b);
+print(a - b);
+print(a / b);
+print(a * b);
+print(a > b);
+print(a < b);
+print(a >= b);
+print(a <= b);
+
+//conditional
+
+print("conditional");
+var nilai;
+nilai = 80;
+
+if (nilai >= 80) {
+  print("A");
+} else if (nilai <= 80 && nilai >= 50){
+  print("B");
+}else{
+  print("Tidak Lulus");
+}
+
+print("-------");
+nilai >= 80 ? print("A") : print("Tidak A");
+
+//function
+print("function");
+
+hitungnilai();
+hitungnilai1(75, 90);
+var p = hitungnilai1(70, 100, 55);
+print(p);
+var n = hitungnilai2(mapel1: 50, mapel2: 2);
+print(n);
+hitungnilai3(72, 100);
+}
+
+//function
+hitungnilai(){
+  print("hitung nilai");
+}
+
+//potional argument
+hitungnilai1(mapel1, mapel2, [mapel3]) {
+  var nilaiakhir1;
+  if (mapel3 != null) {
+    nilaiakhir1 = mapel1 / mapel2 + mapel3;
+  }else {
+    nilaiakhir1 = mapel1 / mapel2;
+  }
+  return nilaiakhir1;
+}
+
+//name argument
+hitungnilai2({mapel1, mapel2}) {
+  var nilaiakhir2;
+  if (mapel2 != null) {
+    nilaiakhir2 = mapel1 / mapel2;
+  } else {
+    nilaiakhir2 = mapel1;
+  }
+  return nilaiakhir2;
+}
+
+//void
+void hitungnilai3(mapel1, mapel2) {
+  var nilaiakhir3 = mapel1 + mapel2;
+  print(nilaiakhir3);
 }
