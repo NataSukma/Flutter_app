@@ -1,2 +1,6 @@
 # Flutter_app
-tempat pengumpulan tugas
+Nama: Nata Sukma Nur Safari
+NIM: 20200120033
+
+
+Tempat pengumpulan tugas
