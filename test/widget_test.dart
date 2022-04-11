@@ -141,4 +141,4 @@
 //void hitungnilai3(mapel1, mapel2) {
 //var nilaiakhir3 = mapel1 + mapel2;
 //print(nilaiakhir3);
-//}
+// }
