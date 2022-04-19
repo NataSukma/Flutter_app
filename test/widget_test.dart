@@ -307,3 +307,13 @@ class Kambing extends Hewan {
 
 class Hewan {
 }
+async function myAsync () {
+    let p = new Promise((resolve, reject) => {
+        setTimeout(() => resolve("Hello World!"), 2000)
+    });
+
+    let result = await p;
+    alert(result);
+}
+
+myAsync();
